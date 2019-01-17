@@ -19,6 +19,7 @@ end
 def now_serving(array)
   if array.size == 0 
     puts "There is nobody waiting to be served!"
+    return nil
   end
   name = array.shift
   puts "Currently serving #{name}."
