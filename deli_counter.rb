@@ -14,4 +14,7 @@ def take_a_number(array, name)
   place= array.size+1 
   puts "Welcome, #{name}. You are number #{place} in line."
 end
-def 
+def now_serving(array)
+  name = array.shift
+  puts "Currently serving #{name}"
+end
