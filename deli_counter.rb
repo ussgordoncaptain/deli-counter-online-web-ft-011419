@@ -2,6 +2,7 @@
 def line(array)
   if array.size == 0
     puts "The line is currently empty."
+    return nil
   end
   puts "The line is currently:"
   array.each_with_index do |person, spot|
