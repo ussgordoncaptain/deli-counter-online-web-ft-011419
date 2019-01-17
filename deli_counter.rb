@@ -4,11 +4,12 @@ def line(array)
     puts "The line is currently empty."
     return nil
   end
-  print "The line is currently: "
+  str=  "The line is currently:"
   array.each_with_index do |person, spot|
     place= spot+1 
-    print "#{place}. #{person} "
+    str += " #{place}. #{person}"
   end
+  puts str
 end
 def take_a_number(array, name)
   array.push(name)
